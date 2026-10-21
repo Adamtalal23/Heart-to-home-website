@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Free Estimate</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Request a free estimate for painting, kitchens, bathrooms, flooring, trim or handyman work from Heart To Home.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="promo"><div class="wrap"><b>10% OFF</b><span>for military, first responders &amp; educators. Thank you for your service.</span><a href="estimate.html">Claim it</a></div></div><header class="top"><div class="wrap"><a class="brand" href="index.html"><span class="logo" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 11 12 4l9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z" fill="#fff"/><path d="M12 17.2s-3.2-2-3.2-4a1.7 1.7 0 0 1 3.2-.8 1.7 1.7 0 0 1 3.2.8c0 2-3.2 4-3.2 4z" fill="#D9C3A0"/></svg></span><span><b>Heart To Home</b><small>Home Improvements &amp; Design</small></span></a><nav aria-label="Main"><a href="index.html">Home</a><a href="services.html">Services</a><a href="photos.html">Photos</a><a href="colors.html">Colors</a><a href="reviews.html">Reviews</a><a href="about.html">About</a></nav><a class="btn btn-primary btn-sm" href="estimate.html">Free estimate</a></div></header>
+<main><section class="hero inner-hero"><div class="wrap"><div class="min"><p class="eyebrow">Free estimate</p><h1 style="margin-top:14px">Tell us about your <span class="hl">project.</span></h1><p class="lead">Fill this out and Adam gets it on his phone right away. Most requests get a reply the same day.</p></div></div></section><section class="band"><div class="wrap"><div class="formgrid">
+<form name="estimate" method="POST" action="thanks.html" data-netlify="true" netlify-honeypot="company-website" enctype="multipart/form-data">
+<input type="hidden" name="form-name" value="estimate">
+<p class="hidden-field"><label for="hp">Leave this empty</label><input id="hp" name="company-website" tabindex="-1" autocomplete="off"></p>
+<div class="two"><div class="field"><label for="f-name">Your name <span class="req">*</span></label><input id="f-name" name="name" required autocomplete="name"></div>
+<div class="field"><label for="f-phone">Phone <span class="req">*</span></label><input id="f-phone" name="phone" type="tel" required autocomplete="tel"></div></div>
+<div class="two"><div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email"></div>
+<div class="field"><label for="f-city">City <span class="req">*</span></label><select id="f-city" name="city" required><option value="">Choose your city</option><option>Surprise</option><option>Goodyear</option><option>Buckeye</option><option>Avondale</option><option>Litchfield Park</option><option>Peoria</option><option>Glendale</option><option>Sun City / Sun City West</option><option>El Mirage</option><option>Waddell</option><option>Tucson area</option><option>Prescott area</option><option>Other</option></select></div></div>
+<fieldset><legend class="lbl">What do you need? <span class="req">*</span></legend><div class="checks">
+<label><input type="checkbox" name="services" value="Interior painting"> Interior painting</label><label><input type="checkbox" name="services" value="Exterior painting"> Exterior painting</label><label><input type="checkbox" name="services" value="Move-in paint"> Move-in paint</label><label><input type="checkbox" name="services" value="Move-out paint"> Move-out paint</label><label><input type="checkbox" name="services" value="Kitchen install"> Kitchen install</label><label><input type="checkbox" name="services" value="Bathroom remodel"> Bathroom remodel</label><label><input type="checkbox" name="services" value="Flooring"> Flooring</label><label><input type="checkbox" name="services" value="Trim / baseboards"> Trim / baseboards</label><label><input type="checkbox" name="services" value="Handyman list"> Handyman list</label></div></fieldset>
+<label class="herobox" for="f-hero"><input type="checkbox" id="f-hero" name="hero-discount" value="Yes"><span>I'm military, a first responder or an educator. Apply my 10% off.</span></label>
+<div class="field"><label for="f-details">Project details</label><textarea id="f-details" name="details" placeholder="Rooms, rough square footage, colors you have in mind, your move date, anything we should know"></textarea></div>
+<div class="two"><div class="field"><label for="f-when">When would you like to start?</label><select id="f-when" name="timing"><option>As soon as possible</option><option>Before my move date</option><option>Within a month</option><option>1 to 3 months</option><option>Just getting prices</option></select></div>
+<div class="field"><label for="f-contact">Best way to reach you</label><select id="f-contact" name="contact-method"><option>Text</option><option>Call</option><option>Email</option></select></div></div>
+<div class="field"><label for="f-photo">Photos of the space (optional)</label><input id="f-photo" name="photo" type="file" accept="image/*"><span class="hint">One photo is plenty to get started.</span></div>
+<p class="notice" id="preview-note" hidden>This is a preview. Once the site is live, this button sends the request straight to Adam's phone.</p>
+<button class="btn btn-primary" type="submit">Send my estimate request</button>
+</form>
+<div class="side">
+<div class="card"><p class="eyebrow">Prefer to talk?</p>
+<div class="row"><div><div class="k">Call or text</div><div class="v">623-229-7585</div></div><button class="copy" type="button" data-t="623-229-7585">Copy</button></div>
+<div class="row"><div><div class="k">Email</div><div class="v">adamtalal23@yahoo.com</div></div><button class="copy" type="button" data-t="adamtalal23@yahoo.com">Copy</button></div></div>
+<div class="card"><p class="eyebrow">What happens next</p><p class="muted">1. Adam reviews your request and reaches out.<br>2. We set a time for a free walkthrough.<br>3. You get a written, fixed-price quote.</p></div>
+<div class="card" style="background:var(--wheat);border-color:var(--wheat)"><p class="eyebrow" style="color:var(--ink)">Local heroes</p><p><b>10% off</b> for military, first responders and educators. Check the box on the form.</p></div>
+<div class="card"><p class="eyebrow">Licensed, bonded &amp; insured</p><p class="mono">AZ ROC #342540</p></div>
+</div></div></div></section></main>
+<footer><div class="wrap"><span><b class="slogan-name">Heart To Home</b><br><em class="slogan-sm">From our heart to your home.</em><br>Family owned · Licensed, bonded &amp; insured · AZ ROC #342540<br>© 2026 Heart To Home, Home Improvements and Design LLC</span><nav aria-label="Footer"><a href="index.html">Home</a><a href="services.html">Services</a><a href="photos.html">Photos</a><a href="colors.html">Colors</a><a href="reviews.html">Reviews</a><a href="about.html">About</a><a href="estimate.html">Free estimate</a></nav></div></footer>
+<script src="site.js"></script>
+</body>
+</html>
