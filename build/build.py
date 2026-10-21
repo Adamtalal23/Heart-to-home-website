@@ -145,7 +145,7 @@ def palette():
 </div>'''
 
 SCHEMA = f'''<script type="application/ld+json">{{"@context":"https://schema.org","@type":"HomeAndConstructionBusiness",
-"name":"{NAME}","telephone":"{TEL}","email":"{EMAIL}",
+"name":"{NAME}","url":"https://hearttohomepro.com","telephone":"{TEL}","email":"{EMAIL}",
 "areaServed":["Surprise AZ","Goodyear AZ","Buckeye AZ","Avondale AZ","Litchfield Park AZ","Peoria AZ","Glendale AZ","Sun City AZ","Sun City West AZ","El Mirage AZ"],
 "description":"Licensed, bonded and insured painting, kitchen installs, bathroom remodels, flooring, trim and handyman service in the Phoenix West Valley. {ROC}."}}</script>'''
 
@@ -294,7 +294,7 @@ inner_hero("Request received", 'Thanks! Adam has <span class="hl">your request.<
 
 def doc(fname, title, desc, body, full=True):
     head = (f'<title>{title}</title>\n<meta name="claude:viewport-fit-sides" content="cover">\n'
-            f'<meta name="description" content="{desc}">\n{FONTS}\n<link rel="stylesheet" href="style.css">\n')
+            f'<meta name="description" content="{desc}">\n<link rel="canonical" href="https://hearttohomepro.com/{"" if fname == "index.html" else fname}">\n{FONTS}\n<link rel="stylesheet" href="style.css">\n')
     content = header(fname) + "\n<main>" + body + "</main>\n" + FOOTER + '\n<script src="site.js"></script>\n'
     if full:
         return ('<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
