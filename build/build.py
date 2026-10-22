@@ -262,9 +262,12 @@ SERVICES = ["Interior painting", "Exterior painting", "Move-in paint", "Move-out
 PAGES["estimate.html"] = ("Free Estimate", "Request a free estimate for painting, kitchens, bathrooms, flooring, trim or handyman work from Heart To Home.",
 inner_hero("Free estimate", 'Tell us about your <span class="hl">project.</span>', "Fill this out and Adam gets it on his phone right away. Most requests get a reply the same day.")
 + f'''<section class="band"><div class="wrap"><div class="formgrid">
-<form name="estimate" method="POST" action="thanks.html" data-netlify="true" netlify-honeypot="company-website" enctype="multipart/form-data">
-<input type="hidden" name="form-name" value="estimate">
-<p class="hidden-field"><label for="hp">Leave this empty</label><input id="hp" name="company-website" tabindex="-1" autocomplete="off"></p>
+<form name="estimate" method="POST" action="https://formsubmit.co/adamtalal23@yahoo.com" enctype="multipart/form-data">
+<input type="hidden" name="_subject" value="New estimate request from hearttohomepro.com">
+<input type="hidden" name="_next" value="https://hearttohomepro.com/thanks.html">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_captcha" value="false">
+<p class="hidden-field"><label for="hp">Leave this empty</label><input id="hp" name="_honey" tabindex="-1" autocomplete="off"></p>
 <div class="two"><div class="field"><label for="f-name">Your name <span class="req">*</span></label><input id="f-name" name="name" required autocomplete="name"></div>
 <div class="field"><label for="f-phone">Phone <span class="req">*</span></label><input id="f-phone" name="phone" type="tel" required autocomplete="tel"></div></div>
 <div class="two"><div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email"></div>
